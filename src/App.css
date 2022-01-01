@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+.header {
+  position: relative;
+  height: 440px;
+  z-index: 100;
+  background-color: rgb(66, 136, 221);
+  /* margin-top: -60px; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  z-index: 2;
+  color: #fff;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.menu__icon {
+  font-size: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* .nav p {
+  font-s
+} */
+
+.logo {
+  height: 25px;
+  width: 120px;
+}
+
+.hero__img {
+  background-image: url("/src/assets/images/header-overlay.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.hero {
+  z-index: 2;
+  position: relative;
+  top: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.hero__input {
+  margin-top: 20px;
+  width: 90%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero__input input {
+  height: 100%;
+  padding: 15px;
+  width: 85%;
+}
+
+h1 {
+  font-size: 25px;
+  color: #fff;
+}
+
+.search__icon {
+  margin: auto;
+  font-size: 23px;
+}
+
+.main p {
+  padding: 15px;
+}
+
+.fixed-search {
+  position: fixed;
+  top: 0;
+}
+
+.main {
+  background-color: aliceblue;
 }
